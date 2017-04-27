@@ -1,0 +1,6 @@
+select cust.FirstName,cust.LastName,cust.City,cust.Country,cust.Phone,ordr.OrderDate,ordr.TotalAmount
+ from tbl_Order1 ordr left join tbl_Customer cust
+ on ordr.CustomerID=cust.CustomerID
+ order by ordr.Id 
+
+
